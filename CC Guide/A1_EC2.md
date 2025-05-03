@@ -24,6 +24,4 @@
 cd Downloads  # Navigate to the folder containing the .pem file
 chmod 400 "vedang_2.pem"
 ssh -i "vedang_2.pem" ec2-user@ec2-04-112-78-12.ap-south-1.compute.amazonaws.com
-
-i want in this format all
 ```
