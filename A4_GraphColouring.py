@@ -51,8 +51,8 @@ while True:
             if result:
                 print("\nColor Assignment:")
                 for node, color in result.items():
-                    print(f"{node}: {color}")
-                print(f"Colors Used: {len(set(result.values()))} / {len(colors)}")
+                    print(node + ": " + color)
+                print("Colors Used: " + str(len(set(result.values()))) + " / " + str(len(colors)))
             else:
                 print("No valid coloring found.")
         else:
@@ -62,6 +62,36 @@ while True:
         break
     else:
         print("Invalid choice. Try again.")
+
+
+# # Menu loop
+# graph = colors = result = None
+# while True:
+#     print("\n--- Graph Coloring Menu ---")
+#     print("1. Input Graph & Colors")
+#     print("2. Solve")
+#     print("3. Exit")
+
+#     choice = input("Enter your choice: ").strip()
+#     if choice == '1':
+#         graph, colors = input_graph_colors()
+#     elif choice == '2':
+#         if graph and colors:
+#             result = solve(graph, colors)
+#             if result:
+#                 print("\nColor Assignment:")
+#                 for node, color in result.items():
+#                     print(f"{node}: {color}")
+#                 print(f"Colors Used: {len(set(result.values()))} / {len(colors)}")
+#             else:
+#                 print("No valid coloring found.")
+#         else:
+#             print("Please input the graph and colors first.")
+#     elif choice == '3':
+#         print("Exiting program...")
+#         break
+#     else:
+#         print("Invalid choice. Try again.")
 
 
 # def is_valid(node, col, assign, graph):
