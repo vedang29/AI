@@ -1,3 +1,8 @@
+# Enter the initial state as 9 numbers (0 represents the blank tile):
+# Enter row 1 (3 numbers separated by spaces): 1 2 3
+# Enter row 2 (3 numbers separated by spaces): 0 4 6
+# Enter row 3 (3 numbers separated by spaces): 7 5 8
+
 import heapq
 
 goal_state = [[1, 2, 3],
