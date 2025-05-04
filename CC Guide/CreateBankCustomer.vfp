@@ -1,0 +1,24 @@
+<apex:page standardController="Account" extensions="CreateBankCustomer">
+    <apex:form>
+        <apex:pageMessages />
+        <apex:pageBlock title="Create Bank Customer">
+            <apex:pageBlockSection columns="1">
+                <apex:inputText value="{!customerName}" label="Customer Name"/>
+                <apex:inputText value="{!contactNumber}" label="Contact Number"/>
+                <apex:inputText value="{!phoneNumber}" label="Phone Number"/>
+                <apex:inputText value="{!accountNumber}" label="Account Number"/>
+                <apex:selectList value="{!accountType}" size="1" label="Account Type">
+                    <apex:selectOptions value="{!accountTypeOptions}" />
+                </apex:selectList>
+                <apex:inputText value="{!emailAddress}" label="Email Address"/>
+                <apex:selectList value="{!customerSegment}" size="1" label="Customer Segment">
+                    <apex:selectOptions value="{!segmentOptions}"/>
+                </apex:selectList>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Create" action="{!createCustomer}" />
+                <apex:commandButton value="Cancel" action="{!cancelCreation}" />
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
