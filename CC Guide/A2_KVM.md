@@ -14,7 +14,29 @@
 
 1. Follow all steps mentioned in the handout or use the KSKA Steps.
 
-2. If there are errors during installation, fix the missing dependencies by running:
+2. Install the necessary packages 
+
+```bash
+sudo apt update
+sudo apt install qemu-kvm libvirt-daemon-system virt-manager
+```
+
+3. Add current user to the libvirt group 
+```bash
+sudo adduser $USER libvirt 
+```
+4. Enable and start the libvirt service 
+```bash
+sudo systemctl enable libvirtd.service --now
+```
+
+5. Log out of the desktop session and relogin (RESART PC). 
+
+6. Open the Virtual Machine Manager app from the application tray, an option titled          
+“QEMU/KVM” should appear.
+
+
+**7. NOTE : If there are errors during installation, fix the missing dependencies by running:**
 
 ```bash
 sudo apt-get update
