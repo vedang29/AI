@@ -8,7 +8,7 @@
    ```
 2. Enter your password if prompted.
 
-3. If there is no output, it indicates virtualisation is not enabled.
+3. If there is no output, it indicates virtualisation is enabled.
 
 ### Step 2: Downloading VirtualBox Manager
 
